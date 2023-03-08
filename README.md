@@ -10,7 +10,7 @@
 ## Roadmap
 
 - [ ] ChatGPT login or / customized model with federated learning or other methods.
-- [ ] Diffusion model for anime2D image generation.
+- [ ] Diffusion model for Live2D image generation.
 - [ ] Multi-language support.
 - [ ] Text-to-speech Style transfer Learning Model.
 - [ ] Personalized model learnable parameters.

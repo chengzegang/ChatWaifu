@@ -20,6 +20,8 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
 ]
 dependencies = [
+  'torch>=1.13.1',
+  'transformers',
 ]
 dynamic = ["version"]
 
@@ -41,6 +43,9 @@ dependencies = [
   "flake8",
   "black",
   "isort",
+  "jupyter",
+  'matplotlib',
+  'ipywidgets',
 ]
 [tool.hatch.envs.default.scripts]
 cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=chatwaifu --cov=tests {args}"
@@ -62,3 +67,6 @@ exclude_lines = [
   "if __name__ == .__main__.:",
   "if TYPE_CHECKING:",
 ]
+
+[tool.mypy]
+exclude = "venv/"
